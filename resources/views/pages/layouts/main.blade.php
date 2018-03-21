@@ -4,13 +4,12 @@
 @include('pages.layouts.partials._head')
 
 <body>
-@include('pages.layouts.partials._nav')
 
-<div class="content">
 
+<div class="container">
+    @include('pages.layouts.partials._nav')
     @yield('content')
     @include('pages.layouts.partials._footer')
-
 </div>
 
 @include('pages.layouts.partials._scripts')

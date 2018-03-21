@@ -1,11 +1,23 @@
-@include('pages.layouts.main')
+@extends('pages.layouts.main')
 @section('title','Create new post')
+@section('stylesheets')
+    {!! HTML::style('css.app.css') !!}
+    @endsection
 @section('content')
-
     <div class="row">
-
+        <div class="col-md-8 offset-md-2">
+            <h1>Create new Post</h1>
+            <hr>
+            {!! Form::open(array('route'=>'posts.store'))!!}
+            {!! Form::label('title', 'Title: ') !!}
+            {!! Form::text('title', null, array('class' => 'form-control')) !!}
+            {!! Form::label('body', 'Post body: ') !!}
+            {!! Form::textarea('body', null, array('class'=> 'form-control')) !!}
+            {!! Form::submit('Create Post', array('class' =>'btn btn-success btn-lg')) !!}
+            {!! Form::close() !!}
+        </div>
     </div>
 
 
 
-    @endsection
+@endsection
