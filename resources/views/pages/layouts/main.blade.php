@@ -13,6 +13,6 @@
 </div>
 
 @include('pages.layouts.partials._scripts')
-
+@yield('scripts')
 </body>
 </html>
