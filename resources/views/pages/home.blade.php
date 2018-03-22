@@ -3,6 +3,6 @@
 
 @section('content')
     <div class="flex-center position-ref full-height">
-
+KOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOooo
     </div>
 @endsection
