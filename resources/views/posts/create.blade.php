@@ -1,4 +1,4 @@
-@extends('pages.layouts.main')
+@extends('layouts.main')
 @section('title','Create new post')
 @section('stylesheets')
     {!! Html::style('css/app.css') !!}
