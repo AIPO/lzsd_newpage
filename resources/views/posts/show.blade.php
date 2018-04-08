@@ -8,7 +8,7 @@
             <p class="lead">{{$post->body}}</p>
         </div>
         <div class="col-md-4">
-            <div class="well">
+            <div class="">
                 <dl>
                     <dt>Created At:</dt>
                     <dd>{{$post->created_at}}</dd>
