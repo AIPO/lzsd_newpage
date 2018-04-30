@@ -12,7 +12,10 @@
 */
 
 
-Route::get('/about', 'PagesController@getAbout');
+Route::get('/about', ['as' => 'about', 'uses' => 'PagesController@getAbout']);
 Route::get('/contacts', 'PagesController@getContact');
 Route::get('/', 'PagesController@getIndex');
-Route::resource('posts','PostsController');
+Route::resource('posts', 'PostsController');
+Route::get('blog/{slug}', ['as' => 'blog.single', 'uses' => 'BlogController@getSingle'])
+    ->where('slug', '[\w\d\_\-]+');
+Route::get('blog', ['uses' => 'BlogController@getIndex', 'as' => 'blog.index']);

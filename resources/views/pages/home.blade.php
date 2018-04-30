@@ -14,15 +14,19 @@
     <div class="row">
         <div class="col-md-8">
             @foreach($posts as $post)
-            <div class="post">
-                <h3>{{$post->title}}</h3>
-                <p>{{$post->body}}</p>
-                {{--<a href="{{route('pages.single', $post->id)}}" class="btn btn-primary">Read more</a>--}}
-                <hr>
-            </div>
+                <div class="post">
+                    <h3>{{$post->title}}</h3>
+                    <p>
+                        {{substr($post->body, 0, 50)}}{{strlen($post->body)>200? "...":""}}
+                    </p>
+                    <a href="{{route('blog.single',$post->slug)}}" class="btn btn-primary">Read more</a>
+                    <hr>
+                </div>
+            @endforeach
         </div>
-    </div>
-    <div class="col-md-4">
-        <h2>Sidebar</h2>
+
+        <div class="col-md-4">
+            <h2>Sidebar</h2>
+        </div>
     </div>
 @endsection

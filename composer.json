@@ -12,6 +12,7 @@
         "laravelcollective/html": "^5.4.0"
     },
     "require-dev": {
+        "doctrine/dbal": "^2.7",
         "barryvdh/laravel-debugbar": "^3.1",
         "barryvdh/laravel-ide-helper": "^2.4",
         "filp/whoops": "^2.0",

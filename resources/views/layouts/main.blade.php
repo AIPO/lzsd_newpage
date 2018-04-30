@@ -11,9 +11,9 @@
 <div class="container">
     @include('layouts._messages')
     @yield('content')
-    @include('layouts._footer')
-</div>
 
+</div>
+@include('layouts._footer')
 @include('layouts._scripts')
 @yield('scripts')
 </body>

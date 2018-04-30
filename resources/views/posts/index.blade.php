@@ -38,7 +38,11 @@
                 </tbody>
             </table>
             <div class="text-center">
-                {!! $posts->currentPage(); !!} of {!! $posts->total() !!}
+                @if($posts->total()>0)
+                    {!! $posts->currentPage(); !!} of {!! $posts->total() !!}
+                @else
+                    <p>No records for posts</p>
+                @endif
             </div>
         </div>
     </div>

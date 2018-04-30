@@ -6,5 +6,5 @@
 @endsection
 
 @section('content')
-
+Page is not found, Email us about this link.
 @endsection

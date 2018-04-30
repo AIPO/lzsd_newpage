@@ -1,5 +1,3 @@
-<footer class="footer">
-    <div class="container">
+<div class="footer">
         <span class="text-muted">Place sticky footer content here.</span>
-    </div>
-</footer>
+</div>

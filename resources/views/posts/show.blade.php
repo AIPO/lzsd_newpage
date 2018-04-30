@@ -8,7 +8,11 @@
             <p class="lead">{{$post->body}}</p>
         </div>
         <div class="col-md-4">
-            <div class="">
+            <div class="well">
+                <dl>
+                    <dt>Url:</dt>
+                    <dd><a href="{{url('blog/'.$post->slug)}}">{{url($post->slug)}}</a></dd>
+                </dl>
                 <dl>
                     <dt>Created At:</dt>
                     <dd>{{$post->created_at}}</dd>

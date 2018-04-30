@@ -9,7 +9,7 @@ class PagesController extends Controller
 {
     public function getIndex()
     {
-        $posts = Post::orderBy('created_at', 'desc')->limit(5);
+        $posts = Post::all();
         return view('pages.home')->with('posts', $posts);
     }
 
